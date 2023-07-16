@@ -1,0 +1,2 @@
+C:\Users\jorda\source\repos\personal-website\obj\Debug\personal-website.esproj.SuggestedBindingRedirects.cache
+C:\Users\jorda\source\repos\personal-website\obj\Debug\personal-website.esproj.CoreCompileInputs.cache
