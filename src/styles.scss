@@ -2,3 +2,28 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+// variables //////////
+///////////////////////
+:root {
+  --bmo-blue: #0075BE;
+}
+
+// header //////////
+////////////////////
+
+header {
+  height: 14vh;
+  background-color: var(--bmo-blue);
+}
+
+.logo {
+  display: inline-block;
+  height: 14vh;
+}
+
+.logo-image {
+  height: 12vh;
+  border-radius: 50%;
+  padding: 1vh 0;
+}
