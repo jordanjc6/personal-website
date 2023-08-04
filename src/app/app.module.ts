@@ -3,10 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RxTranslateModule } from '@rxweb/translate';
 
 import { AppMaterialModule } from './app-material.module';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './components/home/home.component';
+
+declare var multiLangConfig: any;
 
 @NgModule({
   declarations: [
@@ -17,9 +20,11 @@ import { HomeComponent } from './components/home/home.component';
     BrowserModule,
     BrowserAnimationsModule,
     AppMaterialModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RxTranslateModule.forRoot(multiLangConfig),
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [RxTranslateModule],
+  bootstrap: [AppComponent],
+  exports: [RxTranslateModule]
 })
 export class AppModule { }
