@@ -50,8 +50,11 @@ header li a {
   padding: 0px 8px;
   border-radius: 4px;
   color: white;
+  min-width: 18vh;
+  transition: all 0.2s;
 }
 
 header li a:hover {
   background-color: white;
+  color: var(--bmo-blue);
 }
