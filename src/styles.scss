@@ -9,9 +9,15 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   --bmo-blue: #0075BE;
 }
 
+// page //////////
+//////////////////
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
 // header //////////
 ////////////////////
-
 header {
   height: 14vh;
   background-color: var(--bmo-blue);
@@ -57,4 +63,19 @@ header li a {
 header li a:hover {
   background-color: white;
   color: var(--bmo-blue);
+}
+
+// home //////////
+//////////////////
+#home {
+  padding-bottom: 10vh;
+}
+
+// footer //////////
+////////////////////
+footer {
+  height: 10vh;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
