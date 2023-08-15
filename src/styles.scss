@@ -7,6 +7,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 ///////////////////////
 :root {
   --bmo-blue: #0075BE;
+  --header-height: 14vh;
+  --header-max-height: 100px;
+  --footer-height: 10vh;
 }
 
 // page //////////
@@ -19,18 +22,21 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 // header //////////
 ////////////////////
 header {
-  height: 14vh;
+  height: var(--header-height);
+  max-height: var(--header-max-height);
   background-color: var(--bmo-blue);
 }
 
 .logo {
   display: inline-block;
-  height: 12vh;
+  height: calc(var(--header-height) - 2vh);
+  max-height: calc(var(--header-max-height) - 2vh);
   margin: 1vh;
 }
 
 .logo-image {
-  height: 12vh;
+  height: calc(var(--header-height) - 2vh);
+  max-height: calc(var(--header-max-height) - 2vh);
   border-radius: 50%;
 }
 
@@ -50,13 +56,14 @@ header li a {
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  height: 12vh;
-  line-height: 12vh;
+  height: calc(var(--header-height) - 2vh);
+  max-height: calc(var(--header-max-height) - 2vh);
+  line-height: calc(var(--header-height) - 2vh);  // text won't be vertically aligned once max height limit is hit
   margin: 1vh;
   padding: 0px 8px;
   border-radius: 4px;
   color: white;
-  min-width: 18vh;
+  min-width: calc(var(--header-height) + 4vh);
   transition: all 0.2s;
 }
 
@@ -68,13 +75,13 @@ header li a:hover {
 // home //////////
 //////////////////
 #home {
-  padding-bottom: 10vh;
+  padding-bottom: var(--footer-height);
 }
 
 // footer //////////
 ////////////////////
 footer {
-  height: 10vh;
+  height: var(--footer-height);
   position: absolute;
   bottom: 0;
   width: 100%;
