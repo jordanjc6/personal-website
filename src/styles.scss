@@ -20,6 +20,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   min-height: 100vh;
 }
 
+// shared ////////
+//////////////////
+.horizontal-spacer {
+  display: inline-block;
+}
+
 // header //////////
 ////////////////////
 header {
@@ -72,6 +78,29 @@ header li a:hover {
 //////////////////
 #home {
   padding-bottom: var(--footer-height);
+}
+
+.home-content-container {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  padding-top: 15vh;
+}
+
+.home-text-container {
+  display: inline-block;
+  border: 2px solid red;
+}
+
+.home-image-container {
+  display: inline-block;
+  border: 2px solid blue;
+}
+
+.self-portrait {
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
 }
 
 // footer //////////
