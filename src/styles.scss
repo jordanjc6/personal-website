@@ -84,23 +84,29 @@ header li a:hover {
   display: flex;
   align-items: start;
   justify-content: center;
-  padding-top: 15vh;
+  padding-top: 5vw;
+  padding-bottom: 15vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .home-text-container {
   display: inline-block;
-  border: 2px solid red;
+  width: 800px;
+}
+
+.greeting {
+  font-size: 45px;
+  margin: 0;
 }
 
 .home-image-container {
   display: inline-block;
-  border: 2px solid blue;
 }
 
 .self-portrait {
-  max-width: 100%;
-  height: auto;
-  width: auto\9; /* ie8 */
+  border-radius: 15px;
+  border: 2px solid var(--bmo-blue);
 }
 
 // footer //////////
