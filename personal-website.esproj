@@ -12,6 +12,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="src\app\components\" />
+    <Folder Include="src\assets\images\projects\rfbp\" />
     <Folder Include="src\assets\multi-lang\en\" />
   </ItemGroup>
 </Project>

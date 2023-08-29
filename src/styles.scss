@@ -84,15 +84,13 @@ header li a:hover {
   display: flex;
   align-items: start;
   justify-content: center;
-  padding-top: 5vw;
-  padding-bottom: 5vw;
-  padding-left: 5vw;
-  padding-right: 5vw;
+  padding: 5vw;
 }
 
 .home-text-container {
   display: inline-block;
   width: 800px;
+  margin-right: 75px;
 }
 
 .greeting {
@@ -107,6 +105,35 @@ header li a:hover {
 .self-portrait {
   border-radius: 15px;
   border: 2px solid var(--bmo-blue);
+}
+
+// projects //////////
+//////////////////
+#projects {
+  padding-bottom: var(--footer-height);
+  border: 2px solid black;
+}
+
+.projects-content-container {
+  border: 2px solid red;
+  padding: 5vw;
+}
+
+.projects-page-description {
+  border: 2px solid green;
+  margin-bottom: 50px;
+}
+
+.projects-page-description h1 {
+  margin: 0;
+}
+
+.projects-page-description p {
+  margin: 0;
+}
+
+.project-entries {
+  border: 2px solid blue;
 }
 
 // footer //////////

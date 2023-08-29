@@ -7,5 +7,9 @@
   },
   "Home": {
     "Experience": "I am in my 3A term studying computer engineering at University of Waterloo. I have experience developing dynamic single-page applications using Angular, Vue, and .NET Core. I previously worked at Paralucent, MCAP, and Gore Mutual Insurance in software and web development roles."
+  },
+  "Projects": {
+    "Title": "Projects",
+    "Description": "You may check out some of my work and links to the corresponding Github repositories below! Click on a project image to see more details."
   }
 }
