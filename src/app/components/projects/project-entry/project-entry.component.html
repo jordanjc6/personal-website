@@ -4,9 +4,9 @@
   <figure>
     <figcaption class="project-caption"><b>({{ figureIndex + 1 }} of {{ numFigures }})</b> {{ figures[figureIndex].caption }}</figcaption>
     <div class="figure-image-container">
-      <button class="figure-button previous-button" (click)="previousImage()"><</button>
+      <button #prevImgBtn class="figure-button previous-button" (click)="previousImage()" (mouseleave)="removeFocus(prevImgBtn)" aria-label="Previous Image"><b><</b></button>
       <img alt="{{ figures[figureIndex].altText }}" class="project-image" src="{{ figures[figureIndex].image }}" />
-      <button class="figure-button next-button" (click)="nextImage()">></button>
+      <button #nextImgBtn class="figure-button next-button" (click)="nextImage()" (mouseleave)="removeFocus(nextImgBtn)" aria-label="Next Image"><b>></b></button>
     </div>
     <!--<figcaption class="project-caption">{{ figures[figureIndex].caption }}</figcaption>-->
   </figure>

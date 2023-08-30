@@ -153,6 +153,10 @@ header li a:hover {
   position: relative;
 }
 
+.figure-image-container:hover > .figure-button {
+  opacity: 100%;
+}
+
 .project-image {
   width: 100%;
   border: 2px solid var(--bmo-blue);
@@ -163,18 +167,42 @@ header li a:hover {
   position: absolute;
   width: var(--figure-button-size);
   height: var(--figure-button-size);
+  font-size: 32px;
   border-radius: 50%;
+  border: 2px solid var(--bmo-blue);
+  background-color: white;
+  color: var(--bmo-blue);
+  cursor: pointer;
+  transition: transform 0.5s ease, opacity 0.25s ease;
+  opacity: 0;
+}
+
+.figure-button:hover {
+  opacity: 70% !important;
+}
+
+.figure-button:focus {
+  opacity: 100%;
 }
 
 .previous-button {
   top: calc(50% - (var(--figure-button-size) / 2));
-  margin-left: 5px;
+  left: 0;
+  margin-left: 8px;
+}
+
+.previous-button:hover {
+  transform: translateX(-5px);
 }
 
 .next-button {
   bottom: calc(50% - (var(--figure-button-size) / 2));
   right: 0;
-  margin-right: 10px;
+  margin-right: 8px;
+}
+
+.next-button:hover {
+  transform: translateX(5px);
 }
 
 .project-caption {

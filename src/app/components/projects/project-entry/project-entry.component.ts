@@ -37,4 +37,8 @@ export class ProjectEntryComponent implements OnInit {
     }
   }
 
+  removeFocus(element: HTMLButtonElement) {
+    element.blur();
+  }
+
 }
