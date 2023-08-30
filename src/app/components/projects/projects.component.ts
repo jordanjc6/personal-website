@@ -15,9 +15,14 @@ export class ProjectsComponent implements OnInit {
   projects: ProjectEntry[] = [
     {
       title: 'RFBP - Mutual Fund Fee Calculator',
-      image: 'assets/images/projects/rfbp/rfbp-home.png',
-      altText: 'Mutual fund fee calculator app',
-      caption: 'A web application developed for BMO using Angular and .NET Core that is used to calculate fees for over 1200 possible funds based on the selected portfolio type.'
+      date: 'August 2023',
+      figures: [
+        {
+          image: 'assets/images/projects/rfbp/rfbp-home.png',
+          altText: 'Mutual fund fee calculator app',
+          caption: 'A web application developed for BMO using Angular and .NET Core that is used to calculate fees for over 1200 possible funds based on the selected portfolio type.'
+        }
+      ]
     }
   ];
 

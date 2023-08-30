@@ -1,6 +1,7 @@
+import { Figure } from "./figure.interface";
+
 export interface ProjectEntry {
   title: string;
-  image: string;
-  altText: string;
-  caption: string;
+  date: string;
+  figures: Figure[];
 }

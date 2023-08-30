@@ -12,7 +12,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="src\app\components\" />
-    <Folder Include="src\app\interfaces\" />
     <Folder Include="src\assets\multi-lang\en\" />
   </ItemGroup>
 </Project>

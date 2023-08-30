@@ -11,6 +11,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   --header-height: 80px;
   --footer-height: 65px;
   --socialmedia-icon-size: 25px;
+  --figure-button-size: 50px;
 }
 
 // page //////////
@@ -82,7 +83,7 @@ header li a:hover {
 
 .home-content-container {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   padding: 5vw;
 }
@@ -107,20 +108,17 @@ header li a:hover {
   border: 2px solid var(--bmo-blue);
 }
 
-// projects //////////
+// projects //////
 //////////////////
 #projects {
   padding-bottom: var(--footer-height);
-  border: 2px solid black;
 }
 
 .projects-content-container {
-  border: 2px solid red;
   padding: 5vw;
 }
 
 .projects-page-description {
-  border: 2px solid green;
   margin-bottom: 50px;
 }
 
@@ -133,7 +131,52 @@ header li a:hover {
 }
 
 .project-entries {
-  border: 2px solid blue;
+
+}
+
+// project-entry /
+//////////////////
+.project-entry-container {
+  margin-bottom: 75px;
+}
+
+.project-title {
+  margin-bottom: 0;
+}
+
+.project-date {
+  margin-top: 0;
+  color: slategrey;
+}
+
+.figure-image-container {
+  position: relative;
+}
+
+.project-image {
+  width: 100%;
+}
+
+.figure-button {
+  position: absolute;
+  width: var(--figure-button-size);
+  height: var(--figure-button-size);
+  border-radius: 50%;
+}
+
+.previous-button {
+  top: calc(50% - (var(--figure-button-size) / 2));
+  margin-left: 10px;
+}
+
+.next-button {
+  bottom: calc(50% - (var(--figure-button-size) / 2));
+  right: 0;
+  margin-right: 10px;
+}
+
+.project-caption {
+
 }
 
 // footer //////////

@@ -1,7 +1,12 @@
 <div class="project-entry-container">
   <h2 class="project-title">{{ title }}</h2>
+  <p class="project-date">{{ date }}</p>
   <figure>
-    <img alt="{{ altText }}" class="project-image" src="{{ image }}" />
-    <figcaption class="project-caption">{{ caption }}</figcaption>
+    <div class="figure-image-container">
+      <button class="figure-button previous-button"><</button>
+      <img alt="{{ figures[figureIndex].altText }}" class="project-image" src="{{ figures[figureIndex].image }}" />
+      <button class="figure-button next-button">></button>
+    </div>
+    <figcaption class="project-caption">{{ figures[figureIndex].caption }}</figcaption>
   </figure>
 </div>

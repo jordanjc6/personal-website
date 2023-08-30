@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Figure } from '../../../interfaces/figure.interface';
 
 @Component({
   selector: 'app-project-entry',
@@ -8,9 +9,10 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ProjectEntryComponent implements OnInit {
 
   @Input() title!: string;
-  @Input() image!: string;
-  @Input() altText!: string;
-  @Input() caption!: string;
+  @Input() date!: string;
+  @Input() figures!: Figure[];
+
+  figureIndex: number = 0;
 
   constructor() { }
 
