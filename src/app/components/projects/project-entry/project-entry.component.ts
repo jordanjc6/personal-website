@@ -13,10 +13,28 @@ export class ProjectEntryComponent implements OnInit {
   @Input() figures!: Figure[];
 
   figureIndex: number = 0;
+  numFigures!: number;
 
   constructor() { }
 
   ngOnInit(): void {
+    this.numFigures = this.figures.length;
+  }
+
+  previousImage() {
+    if (this.figureIndex == 0) {
+      this.figureIndex = this.numFigures - 1;
+    } else {
+      this.figureIndex -= 1;
+    }
+  }
+
+  nextImage() {
+    if (this.figureIndex == (this.numFigures - 1)) {
+      this.figureIndex = 0;
+    } else {
+      this.figureIndex += 1;
+    }
   }
 
 }

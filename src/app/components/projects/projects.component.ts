@@ -19,8 +19,13 @@ export class ProjectsComponent implements OnInit {
       figures: [
         {
           image: 'assets/images/projects/rfbp/rfbp-home.png',
-          altText: 'Mutual fund fee calculator app',
+          altText: 'Mutual fund fee calculator app home page',
           caption: 'A web application developed for BMO using Angular and .NET Core that is used to calculate fees for over 1200 possible funds based on the selected portfolio type.'
+        },
+        {
+          image: 'assets/images/projects/rfbp/rfbp-fundsearch.png',
+          altText: 'Mutual fund fee calculator app fund search section',
+          caption: 'You may filter funds by 3 individual categories or by BMO Portfolio. You may also use the text search to filter by Fund Name or Fund Code.'
         }
       ]
     }

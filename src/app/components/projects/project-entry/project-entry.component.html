@@ -2,11 +2,12 @@
   <h2 class="project-title">{{ title }}</h2>
   <p class="project-date">{{ date }}</p>
   <figure>
+    <figcaption class="project-caption"><b>({{ figureIndex + 1 }} of {{ numFigures }})</b> {{ figures[figureIndex].caption }}</figcaption>
     <div class="figure-image-container">
-      <button class="figure-button previous-button"><</button>
+      <button class="figure-button previous-button" (click)="previousImage()"><</button>
       <img alt="{{ figures[figureIndex].altText }}" class="project-image" src="{{ figures[figureIndex].image }}" />
-      <button class="figure-button next-button">></button>
+      <button class="figure-button next-button" (click)="nextImage()">></button>
     </div>
-    <figcaption class="project-caption">{{ figures[figureIndex].caption }}</figcaption>
+    <!--<figcaption class="project-caption">{{ figures[figureIndex].caption }}</figcaption>-->
   </figure>
 </div>
