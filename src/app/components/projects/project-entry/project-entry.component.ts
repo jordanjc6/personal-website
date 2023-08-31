@@ -21,12 +21,17 @@ export class ProjectEntryComponent implements OnInit {
     this.numFigures = this.figures.length;
   }
 
+  ngAfterViewInit(): void {
+    this.setActiveDot(0);
+  }
+
   previousImage() {
     if (this.figureIndex == 0) {
       this.figureIndex = this.numFigures - 1;
     } else {
       this.figureIndex -= 1;
     }
+    this.setActiveDot(this.figureIndex);
   }
 
   nextImage() {
@@ -35,6 +40,20 @@ export class ProjectEntryComponent implements OnInit {
     } else {
       this.figureIndex += 1;
     }
+    this.setActiveDot(this.figureIndex);
+  }
+
+  setActiveDot(index: number) {
+    let dots = document.getElementsByClassName("slide-dot");
+    for (let i = 0; i < dots.length; i++) {
+      dots[i].classList.remove("dot-active");
+    }
+    dots[index].classList.add("dot-active");
+  }
+
+  changeImage(index: number) {
+    this.figureIndex = index;
+    this.setActiveDot(index);
   }
 
   removeFocus(element: HTMLButtonElement) {
