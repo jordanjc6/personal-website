@@ -7,7 +7,7 @@
   "type": "chrome",
   "request": "launch",
   "url": "http://localhost:4200",
-  "webRoot": "C:\\Users\\jorda\\Source\\Repos\\personal-website"
+  "webRoot": "C:\\Users\\jorda\\source\\repos\\personal-website"
 }</LaunchJsonTarget>
   </PropertyGroup>
 </Project>
