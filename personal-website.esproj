@@ -12,6 +12,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="src\app\components\" />
+    <Folder Include="src\assets\images\projects\leaquotes\" />
+    <Folder Include="src\assets\images\projects\mcjewelry\" />
+    <Folder Include="src\assets\images\projects\mcapdashboard\" />
     <Folder Include="src\assets\multi-lang\en\" />
   </ItemGroup>
 </Project>
