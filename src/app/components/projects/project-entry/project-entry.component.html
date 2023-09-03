@@ -10,7 +10,7 @@
     </div>
     <!--<figcaption class="project-caption">{{ figures[figureIndex].caption }}</figcaption>-->
     <div class="slide-indicator">
-      <span *ngFor="let fig of figures; index as i" class="slide-dot" (click)="changeImage(i)"></span>
+      <span *ngFor="let fig of figures; index as i" class="slide-dot dots-{{title}}" (click)="changeImage(i)"></span>
     </div>
   </figure>
 </div>

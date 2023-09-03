@@ -44,7 +44,8 @@ export class ProjectEntryComponent implements OnInit {
   }
 
   setActiveDot(index: number) {
-    let dots = document.getElementsByClassName("slide-dot");
+    /*let dots = document.getElementsByClassName("slide-dot");*/
+    let dots = document.getElementsByClassName("dots-" + this.title);  // note: project title must be unique for this to work
     for (let i = 0; i < dots.length; i++) {
       dots[i].classList.remove("dot-active");
     }
