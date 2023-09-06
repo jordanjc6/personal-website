@@ -230,6 +230,28 @@ header li a:hover {
   background-color: #717171;
 }
 
+// contact /////////
+////////////////////
+#contact {
+  padding-bottom: var(--footer-height);
+}
+
+.contact-content-container {
+  padding: 5vw;
+}
+
+.contact-text-container {
+  width: 200px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.contact-heading {
+  background-color: var(--bmo-blue);
+  color: white;
+  font-size: 18px;
+}
+
 // footer //////////
 ////////////////////
 footer {
