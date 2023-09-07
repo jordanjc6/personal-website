@@ -1,1 +1,2 @@
 C:\Users\jorda\source\repos\personal-website\obj\Debug\personal-website.esproj.CoreCompileInputs.cache
+C:\Users\jorda\Source\Repos\jordanjc6.github.io\obj\Debug\personal-website.esproj.CoreCompileInputs.cache
