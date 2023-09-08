@@ -89,7 +89,6 @@ header li a:hover {
 }
 
 .home-text-container {
-  display: inline-block;
   width: 800px;
   margin-right: 75px;
 }
@@ -100,7 +99,7 @@ header li a:hover {
 }
 
 .home-image-container {
-  display: inline-block;
+
 }
 
 .self-portrait {
@@ -147,6 +146,11 @@ header li a:hover {
 .project-date {
   margin-top: 0;
   color: slategrey;
+}
+
+figure {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .figure-image-container {
@@ -311,4 +315,44 @@ footer li {
 .fa-envelope {
   background: #5A5A5A;
   color: white;
+}
+
+// responsiveness //
+////////////////////
+@media only screen and (max-width: 769px) {
+   // header //
+  .logo {
+    display: none;
+  }
+
+  header ul {
+    float: initial;
+    margin-right: 0px;
+  }
+
+  header li a {
+    width: 100px; // note: will overflow when viewport > 336px width
+  }
+
+  // home //
+  .home-content-container {
+    display: initial;
+  }
+
+  .home-text-container {
+    width: 90vw;
+    margin: 0 auto;
+    margin-bottom: 5vw;
+  }
+
+  .self-portrait {
+    width: 90vw;
+    margin: 0 calc(5vw);
+  }
+
+  // footer //
+
+  footer ul {
+    margin-right: 0px;
+  }
 }
