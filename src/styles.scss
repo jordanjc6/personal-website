@@ -1,0 +1,358 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+// variables //////////
+///////////////////////
+:root {
+  --bmo-blue: #0075BE;
+  --bmo-light-grey: #f5f6f7;
+  --header-height: 80px;
+  --footer-height: 65px;
+  --socialmedia-icon-size: 25px;
+  --figure-button-size: 50px;
+}
+
+// page //////////
+//////////////////
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+// shared ////////
+//////////////////
+.horizontal-spacer {
+  display: inline-block;
+}
+
+// header //////////
+////////////////////
+header {
+  height: var(--header-height);
+  background-color: var(--bmo-blue);
+}
+
+.logo {
+  display: inline-block;
+  height: calc(var(--header-height) - 12px);
+  margin: 6px;
+}
+
+.logo-image {
+  height: calc(var(--header-height) - 12px);
+  border-radius: 50%;
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+  margin-right: 6px;
+}
+
+header li {
+  display: inline-block;
+}
+
+header li a {
+  display: inline-block;
+  text-align: center;
+  height: calc(var(--header-height) - 12px);
+  line-height: calc(var(--header-height) - 12px);
+  width: 110px;
+  text-decoration: none;
+  margin: 6px;
+  border-radius: 4px;
+  color: white;
+  transition: all 0.2s;
+}
+
+header li a:hover {
+  background-color: white;
+  color: var(--bmo-blue);
+}
+
+// home //////////
+//////////////////
+#home {
+  padding-bottom: var(--footer-height);
+}
+
+.home-content-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 5vw;
+}
+
+.home-text-container {
+  width: 800px;
+  margin-right: 75px;
+}
+
+.greeting {
+  font-size: 45px;
+  margin: 0;
+}
+
+.home-image-container {
+
+}
+
+.self-portrait {
+  border-radius: 15px;
+  border: 2px solid var(--bmo-blue);
+}
+
+// projects //////
+//////////////////
+#projects {
+  padding-bottom: var(--footer-height);
+}
+
+.projects-content-container {
+  padding: 5vw;
+}
+
+.projects-page-description {
+  margin-bottom: 50px;
+}
+
+.projects-page-description h1 {
+  margin: 0;
+}
+
+.projects-page-description p {
+  margin: 0;
+}
+
+.project-entries {
+
+}
+
+// project-entry /
+//////////////////
+.project-entry-container {
+  margin-bottom: 75px;
+}
+
+.project-title {
+  margin-bottom: 0;
+}
+
+.project-date {
+  margin-top: 0;
+  color: slategrey;
+}
+
+figure {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.figure-image-container {
+  position: relative;
+}
+
+.figure-image-container:hover > .figure-button {
+  opacity: 100%;
+}
+
+.project-image {
+  width: 100%;
+  border: 2px solid var(--bmo-blue);
+  border-radius: 15px;
+}
+
+.figure-button {
+  position: absolute;
+  width: var(--figure-button-size);
+  height: var(--figure-button-size);
+  font-size: 32px;
+  border-radius: 50%;
+  border: 2px solid var(--bmo-blue);
+  background-color: white;
+  color: var(--bmo-blue);
+  cursor: pointer;
+  transition: transform 0.5s ease, opacity 0.25s ease;
+  opacity: 0;
+}
+
+.figure-button:hover {
+  opacity: 70% !important;
+}
+
+.figure-button:focus {
+  opacity: 100%;
+}
+
+.previous-button {
+  top: calc(50% - (var(--figure-button-size) / 2));
+  left: 0;
+  margin-left: 8px;
+}
+
+.previous-button:hover {
+  transform: translateX(-5px);
+}
+
+.next-button {
+  bottom: calc(50% - (var(--figure-button-size) / 2));
+  right: 0;
+  margin-right: 8px;
+}
+
+.next-button:hover {
+  transform: translateX(5px);
+}
+
+.project-caption {
+  margin-bottom: 5px;
+  padding: 2.5px;
+}
+
+.slide-indicator {
+  text-align: center;
+  margin-top: 3px;
+}
+
+.slide-dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot-active, .slide-dot:hover {
+  background-color: #717171;
+}
+
+// contact /////////
+////////////////////
+#contact {
+  padding-bottom: var(--footer-height);
+}
+
+.contact-content-container {
+  padding: 5vw;
+}
+
+.contact-text-container {
+  width: 200px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.contact-heading {
+  background-color: var(--bmo-blue);
+  color: white;
+  font-size: 18px;
+}
+
+// footer //////////
+////////////////////
+footer {
+  height: var(--footer-height);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--bmo-light-grey);
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+  margin-right: 6px;
+  height: var(--footer-height);
+}
+
+footer li {
+  display: inline-block;
+  margin-top: calc( (var(--footer-height) - var(--socialmedia-icon-size)) / 4 );
+  margin-bottom: calc( (var(--footer-height) - var(--socialmedia-icon-size)) / 4 );
+}
+
+// font awesome icons
+.fa {
+  padding: 10px;
+  font-size: var(--socialmedia-icon-size);
+  width: var(--socialmedia-icon-size);
+  height: var(--socialmedia-icon-size);
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin: 0px 2.5px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-github {
+  background: black;
+  color: white;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-envelope {
+  background: #5A5A5A;
+  color: white;
+}
+
+// responsiveness //
+////////////////////
+@media only screen and (max-width: 769px) {
+   // header //
+  .logo {
+    display: none;
+  }
+
+  header ul {
+    float: initial;
+    margin-right: 0px;
+  }
+
+  header li a {
+    width: 100px; // note: will overflow when viewport > 336px width
+  }
+
+  // home //
+  .home-content-container {
+    display: initial;
+  }
+
+  .home-text-container {
+    width: 90vw;
+    margin: 0 auto;
+    margin-bottom: 5vw;
+  }
+
+  .self-portrait {
+    width: 90vw;
+    margin: 0 calc(5vw);
+  }
+
+  // footer //
+
+  footer ul {
+    margin-right: 0px;
+  }
+}
