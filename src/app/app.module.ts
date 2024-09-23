@@ -13,6 +13,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ProjectEntryComponent } from './components/projects/project-entry/project-entry.component';
+import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-policy.component';
 
 declare var multiLangConfig: any;
 
@@ -24,7 +25,8 @@ declare var multiLangConfig: any;
     FooterComponent,
     ProjectsComponent,
     ContactComponent,
-    ProjectEntryComponent
+    ProjectEntryComponent,
+    PrivacyPolicyComponent
   ],
   imports: [
     BrowserModule,
